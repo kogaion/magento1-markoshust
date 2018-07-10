@@ -1,0 +1,19 @@
+<config>
+    <modules>
+        <Mastering_HelloWorld>
+            <version>0.1.0</version>
+        </Mastering_HelloWorld>
+    </modules>
+
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Mastering_HelloWorld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>
+    </frontend>
+</config>
