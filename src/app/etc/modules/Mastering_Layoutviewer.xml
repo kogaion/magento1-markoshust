@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Mastering_Layoutviewer>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Mastering_Layoutviewer>
+    </modules>
+</config>

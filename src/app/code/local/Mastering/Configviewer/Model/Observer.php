@@ -6,7 +6,7 @@
  * Time: 15:28
  */
 
-class Observer
+class Mastering_Configviewer_Model_Observer
 {
     const FLAG_SHOW_CONFIG = 'showConfig';
     const FLAG_SHOW_CONFIG_FORMAT = 'showConfigFormat';
@@ -16,9 +16,7 @@ class Observer
     public function checkForConfigRequest(Varien_Event_Observer $observer)
     {
         $this->request = $observer->getEvent()->getData('front')->getRequest();
-        print_r($this->request);exit;
         if ($this->request->{self::FLAG_SHOW_CONFIG} === 'true') {
-//            echo get_class($observer);exit;
             $this->setHeader();
             $this->outputConfig();
         }

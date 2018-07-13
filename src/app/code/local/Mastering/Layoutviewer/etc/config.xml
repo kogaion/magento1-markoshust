@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Mastering_Layoutviewer>
+            <version>0.1.0</version>
+        </Mastering_Layoutviewer>
+    </modules>
+
+    <global>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                    <mastering_layoutviewer_model_observer>
+                        <type>singleton</type>
+                        <class>Mastering_Layoutviewer_Model_Observer</class>
+                        <method>checkForLayoutRequest</method>
+                    </mastering_layoutviewer_model_observer>
+                </observers>
+            </controller_front_init_routers>
+        </events>
+    </global>
+</config>
