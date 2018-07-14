@@ -1,5 +1,4 @@
 !.gitignore
-/var/cache/*
-/var/session/*
-/var/log/*
+/var/*
+!/var/.htaccess
 /media/catalog/product/cache/*
