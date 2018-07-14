@@ -48,7 +48,8 @@ class Mage_Cms_IndexController extends Mage_Core_Controller_Front_Action
         Zend_Debug::dump(
 //            Mage::getResourceModel("catalog/product")
 //            get_class(Mage::getResourceModel("catalog/product"))
-            get_class(Mage::helper("sales"))
+//            get_class(Mage::helper("sales"))
+            Mage::app()->getLayout()->createBlock("core/template")
         );
 
         exit;
