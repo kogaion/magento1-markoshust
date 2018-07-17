@@ -45,12 +45,15 @@ class Mage_Cms_IndexController extends Mage_Core_Controller_Front_Action
 //        var_dump(Mage::getConfig()->getNode("default/some/random/xpath"));
 
 
-//        Zend_Debug::dump(
+        Zend_Debug::dump(
 //            Mage::getResourceModel("catalog/product")
 //            get_class(Mage::getResourceModel("catalog/product"))
 //            get_class(Mage::helper("sales"))
 //            Mage::app()->getLayout()->createBlock("core/template")
-//        );
+            get_class(Mage::getModel("sales/quote_address"))
+//            Mage::getModel("sales/quote_address")
+//            Mage::getResourceModel("first/page")
+        );
 
         exit;
 

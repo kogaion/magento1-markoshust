@@ -6,7 +6,7 @@
  * Time: 14:18
  */
 
-class First_Sales_Model_Quote_Address extends Mage_Sales_Model_Quote_Address
+class First_Module_Model_Quote_Address extends Mage_Sales_Model_Quote_Address
 {
 
     protected function _construct()
