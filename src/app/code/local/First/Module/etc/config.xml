@@ -8,7 +8,7 @@
     <default>
         <some>
             <random>
-                <xpath>Here is a value.</xpath>
+                <xpath>Here is a value.</xpath> <!-- config value of some/random/xpath for all stores -->
             </random>
         </some>
     </default>
@@ -16,7 +16,7 @@
         <french>
             <some>
                 <random>
-                    <xpath>Some other value.</xpath>
+                    <xpath>Some other value.</xpath> <!-- config value of some/random/xpath for the "french" store only -->
                 </random>
             </some>
         </french>
@@ -24,9 +24,10 @@
     <global>
         <models>
 
+            <!-- rewrite of Mage_Sales_Model_Quote_Address -->
             <sales>
                 <rewrite>
-                    <quote_address>First_Module_Model_Quote_Address</quote_address> <!-- rewrite of Mage_Sales_Model_Quote_Address -->
+                    <quote_address>First_Module_Model_Quote_Address</quote_address>
                 </rewrite>
             </sales>
 
@@ -35,20 +36,39 @@
                 <resourceModel>first_resource</resourceModel>
             </first>
 
+            <!-- rewrite of Mage_Cms_Model_Resource_Page -->
             <cms_resource>
                 <rewrite>
-                    <page>First_Module_Model_Resource_Page</page> <!-- rewrite of Mage_Cms_Model_Resource_Page -->
+                    <page>First_Module_Model_Resource_Page</page>
                 </rewrite>
             </cms_resource>
 
             <first_resource>
-
                 <class>First_Module_Model_Resource</class>
                 <entities>
-
                 </entities>
             </first_resource>
+
+
         </models>
+
+        <blocks>
+
+            <!-- rewrite of Mage_Checkout_Block_Onepage_Success -->
+            <checkout>
+                <rewrite>
+                    <onepage_success>First_Module_Block_Onepage_Success</onepage_success>
+                </rewrite>
+            </checkout>
+
+            <first>
+                <class>First_Module_Block</class>
+            </first>
+
+
+        </blocks>
+
+
     </global>
     <models>
 
