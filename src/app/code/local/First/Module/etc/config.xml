@@ -49,6 +49,12 @@
                 </rewrite>
             </cms_resource>
 
+            <catalog>
+                <rewrite>
+                    <product>First_Module_Model_Catalog_Product</product>
+                </rewrite>
+            </catalog>
+
 
         </models>
 
