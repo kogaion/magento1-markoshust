@@ -5,6 +5,7 @@
             <version>0.0.1</version>
         </First_Module>
     </modules>
+
     <default>
         <some>
             <random>
@@ -12,6 +13,7 @@
             </random>
         </some>
     </default>
+
     <stores>
         <french>
             <some>
@@ -21,74 +23,89 @@
             </some>
         </french>
     </stores>
+
     <global>
         <models>
-
             <first>
                 <class>First_Module_Model</class>
                 <resourceModel>first_resource</resourceModel>
             </first>
-
             <first_resource>
                 <class>First_Module_Model_Resource</class>
                 <entities>
                 </entities>
             </first_resource>
-
             <!-- rewrite of Mage_Sales_Model_Quote_Address -->
             <sales>
                 <rewrite>
                     <quote_address>First_Module_Model_Quote_Address</quote_address>
                 </rewrite>
             </sales>
-
             <!-- rewrite of Mage_Cms_Model_Resource_Page -->
             <cms_resource>
                 <rewrite>
                     <page>First_Module_Model_Resource_Page</page>
                 </rewrite>
             </cms_resource>
-
             <catalog>
                 <rewrite>
                     <product>First_Module_Model_Catalog_Product</product>
                 </rewrite>
             </catalog>
-
-
+            <catalog_resource>
+                <rewrite>
+                    <product>First_Module_Model_Resource_Catalog_Product</product>
+                </rewrite>
+            </catalog_resource>
         </models>
 
         <blocks>
-
             <first>
                 <class>First_Module_Block</class>
             </first>
-
             <!-- rewrite of Mage_Checkout_Block_Onepage_Success -->
             <checkout>
                 <rewrite>
                     <onepage_success>First_Module_Block_Onepage_Success</onepage_success>
                 </rewrite>
             </checkout>
-
+            <catalog>
+                <rewrite>
+                    <product_view>First_Module_Block_Product_View</product_view>
+                </rewrite>
+            </catalog>
         </blocks>
 
         <helpers>
             <first>
                 <class>First_Module_Helper</class>
             </first>
-
             <!-- rewrite of Mage_Checkout_Helper_Data -->
             <checkout>
                 <rewrite>
                     <data>First_Module_Helper_Data</data>
                 </rewrite>
             </checkout>
-
+            <catalog>
+                <rewrite>
+                    <data>First_Module_Helper_Catalog_Data</data>
+                </rewrite>
+            </catalog>
         </helpers>
-
     </global>
-    <models>
 
-    </models>
+    <frontend>
+        <events>
+            <catalog_product_load_after>
+                <observers>
+                    <first>
+                        <type>model</type> <!-- singleton / disabled -->
+                        <class>first/observer</class>
+                        <method>catalogProductLoadAfter</method>
+                    </first>
+                </observers>
+            </catalog_product_load_after>
+        </events>
+    </frontend>
+
 </config>
