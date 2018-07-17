@@ -41,28 +41,6 @@ class Mage_Cms_IndexController extends Mage_Core_Controller_Front_Action
      */
     public function indexAction($coreRoute = null)
     {
-//        echo Mage::getStoreConfig("some/random/xpath");
-//        var_dump(Mage::getConfig()->getNode("default/some/random/xpath"));
-
-
-        Zend_Debug::dump(
-//            Mage::getResourceModel("catalog/product")
-//            get_class(Mage::getResourceModel("catalog/product"))
-//            get_class(Mage::helper("sales"))
-//            Mage::app()->getLayout()->createBlock("core/template")
-//            get_class(Mage::getModel("sales/quote_address"))
-//            Mage::getModel("sales/quote_address")
-//            get_class(Mage::getResourceModel("first/page"))
-//            . ":: " .get_class(Mage::getResourceModel("cms/page"))
-//            get_class(Mage::getBlockSingleton("checkout/onepage_success"))
-//            . "::" . get_class(Mage::getBlockSingleton("first/onepage_success"))
-            get_class(Mage::helper("checkout/data"))
-            . "::" . get_class(Mage::helper("first/data"))
-        );
-
-        exit;
-
-
         $pageId = Mage::getStoreConfig(Mage_Cms_Helper_Page::XML_PATH_HOME_PAGE);
         if (!Mage::helper('cms/page')->renderPage($this, $pageId)) {
             $this->_forward('defaultIndex');
