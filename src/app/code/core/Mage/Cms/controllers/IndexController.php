@@ -50,9 +50,10 @@ class Mage_Cms_IndexController extends Mage_Core_Controller_Front_Action
 //            get_class(Mage::getResourceModel("catalog/product"))
 //            get_class(Mage::helper("sales"))
 //            Mage::app()->getLayout()->createBlock("core/template")
-            get_class(Mage::getModel("sales/quote_address"))
+//            get_class(Mage::getModel("sales/quote_address"))
 //            Mage::getModel("sales/quote_address")
-//            Mage::getResourceModel("first/page")
+            get_class(Mage::getResourceModel("first/page")) . ":: " .
+            get_class(Mage::getResourceModel("cms/page"))
         );
 
         exit;

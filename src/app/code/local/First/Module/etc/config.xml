@@ -23,17 +23,26 @@
     </stores>
     <global>
         <models>
+
             <sales>
                 <rewrite>
-                    <quote_address>First_Module_Model_Quote_Address</quote_address>
+                    <quote_address>First_Module_Model_Quote_Address</quote_address> <!-- rewrite of Mage_Sales_Model_Quote_Address -->
                 </rewrite>
             </sales>
+
             <first>
                 <class>First_Module_Model</class>
                 <resourceModel>first_resource</resourceModel>
             </first>
 
+            <cms_resource>
+                <rewrite>
+                    <page>First_Module_Model_Resource_Page</page> <!-- rewrite of Mage_Cms_Model_Resource_Page -->
+                </rewrite>
+            </cms_resource>
+
             <first_resource>
+
                 <class>First_Module_Model_Resource</class>
                 <entities>
 
