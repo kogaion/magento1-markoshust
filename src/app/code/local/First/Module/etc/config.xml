@@ -24,17 +24,23 @@
     <global>
         <models>
 
+            <first>
+                <class>First_Module_Model</class>
+                <resourceModel>first_resource</resourceModel>
+            </first>
+
+            <first_resource>
+                <class>First_Module_Model_Resource</class>
+                <entities>
+                </entities>
+            </first_resource>
+
             <!-- rewrite of Mage_Sales_Model_Quote_Address -->
             <sales>
                 <rewrite>
                     <quote_address>First_Module_Model_Quote_Address</quote_address>
                 </rewrite>
             </sales>
-
-            <first>
-                <class>First_Module_Model</class>
-                <resourceModel>first_resource</resourceModel>
-            </first>
 
             <!-- rewrite of Mage_Cms_Model_Resource_Page -->
             <cms_resource>
@@ -43,16 +49,14 @@
                 </rewrite>
             </cms_resource>
 
-            <first_resource>
-                <class>First_Module_Model_Resource</class>
-                <entities>
-                </entities>
-            </first_resource>
-
 
         </models>
 
         <blocks>
+
+            <first>
+                <class>First_Module_Block</class>
+            </first>
 
             <!-- rewrite of Mage_Checkout_Block_Onepage_Success -->
             <checkout>
@@ -61,13 +65,21 @@
                 </rewrite>
             </checkout>
 
-            <first>
-                <class>First_Module_Block</class>
-            </first>
-
-
         </blocks>
 
+        <helpers>
+            <first>
+                <class>First_Module_Helper</class>
+            </first>
+
+            <!-- rewrite of Mage_Checkout_Helper_Data -->
+            <checkout>
+                <rewrite>
+                    <data>First_Module_Helper_Data</data>
+                </rewrite>
+            </checkout>
+
+        </helpers>
 
     </global>
     <models>
