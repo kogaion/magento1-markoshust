@@ -16,4 +16,11 @@
             </some>
         </french>
     </stores>
+    <models>
+        <sales>
+            <rewrite>
+                <quote_address>First_Sales_Model_Quote_Address</quote_address>
+            </rewrite>
+        </sales>
+    </models>
 </config>
