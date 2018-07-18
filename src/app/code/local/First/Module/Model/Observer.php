@@ -13,4 +13,9 @@ class First_Module_Model_Observer extends Mage_Core_Model_Abstract
         $product = $observer->getProduct();
         $product->setName($product->getName() . ' is cool!');
     }
+
+    public function controllerFrontInitBefore(Varien_Event_Observer $observer)
+    {
+        var_dump($observer->getData());
+    }
 }

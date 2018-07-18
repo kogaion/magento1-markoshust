@@ -247,3 +247,8 @@
         Deny from all
 
     </Files>
+
+
+#SetEnv APPLICATION_ENV development
+#SetEnv MAGE_RUN_CODE sstore
+#SetEnv MAGE_RUN_TYPE view1
