@@ -32,6 +32,12 @@
                 </args>
             </catalog>
         </routers>
+
+        <layout>
+            <updates>
+                
+            </updates>
+        </layout>
     </frontend>
 
 
