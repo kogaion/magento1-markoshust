@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Second_Module>
+            <codePool>local</codePool>
+            <active>true</active>
+            <depends>First_Module</depends>
+        </Second_Module>
+    </modules>
+</config>

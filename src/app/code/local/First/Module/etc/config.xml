@@ -113,7 +113,7 @@
             <controller_front_init_before>
                 <observers>
                     <first>
-                        <type>method</type>
+                        <type>disabled</type>
                         <class>first/observer</class>
                         <method>controllerFrontInitBefore</method>
                     </first>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Second_Module>
+            <version>0.0.1</version>
+        </Second_Module>
+    </modules>
+
+    <global>
+        <models>
+            <second_module>
+                <class>Second_Module_Model</class>
+            </second_module>
+        </models>
+    </global>
+
+    <frontend>
+        <routers>
+            <second_module>
+                <use>standard</use>
+                <args>
+                    <module>Second_Module</module>
+                    <frontName>2nd</frontName>
+                </args>
+            </second_module>
+
+
+        </routers>
+    </frontend>
+
+
+</config>
