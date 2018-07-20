@@ -4,7 +4,10 @@
         <Second_Module>
             <codePool>local</codePool>
             <active>true</active>
-            <depends>First_Module</depends>
+            <depends>
+                <First_Module/>
+                <Mage_Log />
+            </depends>
         </Second_Module>
     </modules>
 </config>
