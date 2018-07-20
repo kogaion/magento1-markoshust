@@ -24,7 +24,13 @@
                 </args>
             </second_module>
 
-
+            <catalog>
+                <args>
+                    <modules>
+                        <second_module before="Mage_Catalog">Second_Module_Catalog</second_module>
+                    </modules>
+                </args>
+            </catalog>
         </routers>
     </frontend>
 
