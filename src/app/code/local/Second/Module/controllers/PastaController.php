@@ -25,6 +25,7 @@ class Second_Module_PastaController extends Mage_Core_Controller_Front_Action
             ->setBody($xml);
 
         Mage::log($xml, Zend_Log::INFO, 'layout.log', true);
+        Mage::log(Mage::getModel("catalog/product")->debug(), Zend_Log::INFO, "model.log", true);
 
 //        $this->renderLayout();
     }
