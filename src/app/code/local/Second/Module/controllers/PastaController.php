@@ -24,6 +24,8 @@ class Second_Module_PastaController extends Mage_Core_Controller_Front_Action
             ->setHeader("Content-type", "text/text")
             ->setBody($xml);
 
+        Mage::log($xml, Zend_Log::INFO, 'layout.log', true);
+
 //        $this->renderLayout();
     }
 
