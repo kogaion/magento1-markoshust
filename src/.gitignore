@@ -6,4 +6,4 @@
 /var/log/*
 !/var/.htaccess
 /media/catalog/product/cache/*
-/src/app/etc/local.xml
+/app/etc/local.xml
