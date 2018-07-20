@@ -1,4 +1,9 @@
 !.gitignore
-/var/*
+/var/cache/*
+/var/package/*
+/var/report/*
+/var/session/*
+/var/log/*
 !/var/.htaccess
 /media/catalog/product/cache/*
+/src/app/etc/local.xml

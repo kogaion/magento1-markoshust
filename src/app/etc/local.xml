@@ -28,7 +28,7 @@
 <config>
     <global>
         <install>
-            <date><![CDATA[Fri, 13 Jul 2018 07:01:36 +0000]]></date>
+            <date><![CDATA[Fri, 20 Jul 2018 07:35:02 +0000]]></date>
         </install>
         <crypt>
             <key><![CDATA[da58e19d470e751e345f3bd7f269183b]]></key>
@@ -52,7 +52,7 @@
                 </connection>
             </default_setup>
         </resources>
-        <session_save><![CDATA[files]]></session_save>
+        <session_save><![CDATA[db]]></session_save>
     </global>
     <admin>
         <routers>

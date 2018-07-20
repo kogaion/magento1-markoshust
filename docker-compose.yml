@@ -33,24 +33,17 @@ services:
 
   db:
     image: percona:5.7
+#    image: mysql:5.6
     ports:
       - 3306:3306
     env_file: env/db.env
     volumes:
-      - dbdata:/var/lib/mysql
-
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    #container_name: phpmyadmin
-    links:
-      - db
-    restart: always
-    ports:
-     - 8080:80
-    env_file: env/db.env
+#      - dbdata_mysql:/var/lib/mysql
+     - dbdata_percona:/var/lib/mysql
 
 volumes:
-  dbdata:
+#  dbdata_mysql:
+  dbdata_percona:
   sockdata:
 
 
