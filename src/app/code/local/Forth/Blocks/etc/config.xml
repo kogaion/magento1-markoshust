@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Forth_Blocks>
+            <version>0.0.1</version>
+        </Forth_Blocks>
+    </modules>
+
+    <global>
+        <blocks>
+            <forth_blocks>
+                <class>Forth_Blocks_Block</class> <!-- app/code/core/local/Forth/Blocks/Block/*.php -->
+            </forth_blocks>
+        </blocks>
+    </global>
+
+
+</config>
