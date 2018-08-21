@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Forth_Overview>
+            <version>0.0.1</version>
+        </Forth_Overview>
+    </modules>
+
+</config>

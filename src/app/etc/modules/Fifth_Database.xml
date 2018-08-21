@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Fifth_Database>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Fifth_Database>
+    </modules>
+</config>

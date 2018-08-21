@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Forth_Overview>
+            <codePool>local</codePool>
+            <active>true</active>
+            <depends />
+        </Forth_Overview>
+    </modules>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<layout version="0.1.0">
+    <fifth_index_index>
+        <reference name="root">
+            <block name="all-stores" type="fifth/allStores" output="toHtml" template="fifth/all_stores.phtml" />
+        </reference>
+    </fifth_index_index>
+</layout>

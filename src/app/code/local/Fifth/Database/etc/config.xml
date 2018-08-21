@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Fifth_Database>
+            <version>0.0.1</version>
+        </Fifth_Database>
+    </modules>
+
+    <default></default>
+
+    <stores></stores>
+
+    <global>
+        <models>
+            <fifth>
+                <class>Fifth_Database_Model</class>
+                <resourceModel>fifth_resource_model</resourceModel>
+            </fifth>
+            <fifth_resource_model>
+                <class>Fifth_Database_Resource_Model</class>
+                <entities></entities>
+            </fifth_resource_model>
+        </models>
+
+        <blocks>
+            <fifth>
+                <class>Fifth_Database_Block</class>
+            </fifth>
+        </blocks>
+
+        <helpers>
+            <fifth>
+                <class>Fifth_Database_Helper</class>
+            </fifth>
+        </helpers>
+
+    </global>
+
+    <frontend>
+
+        <routers>
+            <fifth>
+                <use>standard</use>
+                <args>
+                    <module>Fifth_Database</module>
+                    <frontName>fifth</frontName>
+                </args>
+            </fifth>
+        </routers>
+
+        <layout>
+            <updates>
+                <file>fifth/all_stores.xml</file>
+            </updates>
+        </layout>
+    </frontend>
+
+    <adminhtml></adminhtml>
+</config>
