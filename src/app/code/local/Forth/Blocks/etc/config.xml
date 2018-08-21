@@ -14,5 +14,16 @@
         </blocks>
     </global>
 
+    <frontend>
+        <routers>
+            <forth_blocks>
+                <use>standard</use>
+                <args>
+                    <module>Forth_Blocks</module>
+                    <frontName>fbs</frontName>
+                </args>
+            </forth_blocks>
+        </routers>
+    </frontend>
 
 </config>
