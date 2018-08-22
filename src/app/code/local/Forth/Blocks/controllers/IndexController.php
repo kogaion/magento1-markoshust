@@ -38,4 +38,23 @@ class Forth_Blocks_IndexController extends Mage_Core_Controller_Front_Action
         $this->getResponse()->setBody($block->toHtml());
 
     }
+
+    public function listBlockAction()
+    {
+        $firstBlock = $this->getLayout()
+            ->createBlock("core/text")
+            ->setText("<h2>Text from block 1</h2>");
+
+        $secondBlock = $this->getLayout()
+            ->createBlock("core/text")
+            ->setText("<h2>block 2 text</h2>");
+
+        $listBlock = $this->getLayout()
+            ->createBlock("core/text_list");
+
+        $listBlock->insert($firstBlock);
+        $listBlock->insert($secondBlock);
+
+        $this->getResponse()->setBody($listBlock->toHtml());
+    }
 }
