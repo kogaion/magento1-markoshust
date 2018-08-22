@@ -36,7 +36,6 @@ class Forth_Blocks_IndexController extends Mage_Core_Controller_Front_Action
         ;
 
         $this->getResponse()->setBody($block->toHtml());
-
     }
 
     public function listBlockAction()
@@ -55,6 +54,8 @@ class Forth_Blocks_IndexController extends Mage_Core_Controller_Front_Action
         $listBlock->insert($firstBlock);
         $listBlock->insert($secondBlock);
 
-        $this->getResponse()->setBody($listBlock->toHtml());
+        $this->loadLayout();
+        $this->getLayout()->getBlock("content")->insert($listBlock);
+        $this->renderLayout();
     }
 }
