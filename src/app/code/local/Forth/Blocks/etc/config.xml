@@ -12,6 +12,11 @@
             <forth_blocks>
                 <class>Forth_Blocks_Block</class> <!-- translates to the path: app/code/core/local/Forth/Blocks/Block/*.php -->
             </forth_blocks>
+            <catalog>
+                <rewrite>
+                    <product_view>Forth_Blocks_Block_Catalog_Product_View</product_view>
+                </rewrite>
+            </catalog>
         </blocks>
     </global>
 
