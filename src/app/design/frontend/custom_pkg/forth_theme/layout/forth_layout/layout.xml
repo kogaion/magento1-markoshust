@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+
+    <default>
+        <reference name="content">
+            <block type="core/text" name="my.custom.text.block">
+                <action method="setText">
+                    <arg><![CDATA[<h1>This is some text!</h1>]]></arg>
+                </action>
+            </block>
+        </reference>
+    </default>
+
+    <my_cool_handle>
+
+    </my_cool_handle>
+</layout>

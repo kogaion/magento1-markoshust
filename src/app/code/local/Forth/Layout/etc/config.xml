@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Forth_Layout>
+            <version>0.0.1</version>
+        </Forth_Layout>
+    </modules>
+
+    <frontend>
+        <layout>
+            <updates>
+                <forth_layout>
+                    <file>forth_layout/layout.xml</file>
+                </forth_layout>
+            </updates>
+        </layout>
+
+        <routers>
+            <forth_layout>
+                <use>standard</use>
+                <args>
+                    <module>Forth_Layout</module>
+                    <frontName>fl</frontName>
+                </args>
+            </forth_layout>
+        </routers>
+    </frontend>
+
+
+</config>
