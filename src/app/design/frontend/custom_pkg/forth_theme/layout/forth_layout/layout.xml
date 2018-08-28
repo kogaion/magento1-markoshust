@@ -14,4 +14,8 @@
     <my_cool_handle>
         <block type="core/template" name="my.custom.block" output="toHtml" template="cool/handle.phtml" />
     </my_cool_handle>
+
+    <forth_layout_index_index>
+        <update handle="my_cool_handle" />
+    </forth_layout_index_index>
 </layout>
