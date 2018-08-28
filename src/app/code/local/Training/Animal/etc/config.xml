@@ -7,6 +7,20 @@
     </modules>
 
     <global>
+        <models>
+            <training>
+                <class>Training_Animal_Model</class>
+                <resource>training_animal_entity</resource>
+            </training>
+            <training_animal_entity>
+                <class>Training_Animal_Model_Entity</class>
+                <entities>
+                    <animal>
+                        <table>animal_entity_flat</table>
+                    </animal>
+                </entities>
+            </training_animal_entity>
+        </models>
 
     </global>
 </config>
