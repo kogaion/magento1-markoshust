@@ -6,20 +6,15 @@
         </Fifth_Database>
     </modules>
 
-    <default></default>
-
-    <stores></stores>
-
     <global>
         <models>
-            <fifth>
+            <fifth_database>
                 <class>Fifth_Database_Model</class>
-                <resourceModel>fifth_resource_model</resourceModel>
-            </fifth>
-            <fifth_resource_model>
-                <class>Fifth_Database_Resource_Model</class>
-                <entities></entities>
-            </fifth_resource_model>
+                <resourceModel>fifth_database_resource_model</resourceModel>
+            </fifth_database>
+            <fifth_database_resource_model>
+                <class>Fifth_Database_Model_Resource</class>
+            </fifth_database_resource_model>
         </models>
 
         <blocks>
@@ -55,5 +50,4 @@
         </layout>
     </frontend>
 
-    <adminhtml></adminhtml>
 </config>
