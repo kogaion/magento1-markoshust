@@ -32,6 +32,9 @@ class Fifth_Database_IndexController extends Mage_Core_Controller_Front_Action
             var_dump($category->getId() . ', ' . $category->getName());
             $childrenIds = explode(",", $category->getChildren());
             foreach ($childrenIds as $childId) {
+                if (empty($childId)) {
+                    continue;
+                }
                 $childCategory = Mage::getModel("catalog/category")
                     ->load($childId);
                 Zend_Debug::dump($childCategory->getData());
