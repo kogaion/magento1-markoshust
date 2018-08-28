@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Training_Animal>
+            <depends />
+            <codePool>local</codePool>
+            <active>true</active>
+        </Training_Animal>
+    </modules>
+</config>
