@@ -3,7 +3,7 @@
 
     <modules>
         <Training_Animal>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Training_Animal>
     </modules>
 
@@ -12,7 +12,7 @@
         <models>
             <training>
                 <class>Training_Animal_Model</class>
-                <resource>training_animal_entity</resource>
+                <resourceModel>training_animal_entity</resourceModel>
             </training>
             <training_animal_entity>
                 <class>Training_Animal_Model_Entity</class>
