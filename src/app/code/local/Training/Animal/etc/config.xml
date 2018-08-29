@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <config>
+
     <modules>
         <Training_Animal>
             <version>1.0.0</version>
@@ -7,6 +8,7 @@
     </modules>
 
     <global>
+
         <models>
             <training>
                 <class>Training_Animal_Model</class>
@@ -21,6 +23,15 @@
                 </entities>
             </training_animal_entity>
         </models>
+
+        <resources>
+            <training_animal_setup>
+                <setup>
+                    <module>Training_Animal</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </training_animal_setup>
+        </resources>
 
     </global>
 </config>
