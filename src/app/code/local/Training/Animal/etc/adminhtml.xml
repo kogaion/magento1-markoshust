@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+
+    <menu>
+        <catalog>
+            <children>
+                <training_animal translate="title">
+                    <title>Manage Animals</title>
+                    <sort_order>30</sort_order>
+                    <children>
+                        <stalls translate="title">
+                            <title><![CDATA[What's here?]]]></title>
+                            <sort_order>2</sort_order>
+                            <action>adminhtml/animal/index</action>
+                        </stalls>
+                    </children>
+                </training_animal>
+            </children>
+        </catalog>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <training_animal translate="title">
+                                <title>Animal permission</title>
+                                <sort_order>40</sort_order>
+                                <children>
+                                    <stalls translate="title">
+                                        <title>Stalls permission</title>
+                                        <sort_order>2</sort_order>
+                                    </stalls>
+                                </children>
+                            </training_animal>
+                        </children>
+                    </catalog>
+
+                </children>
+            </admin>
+        </resources>
+    </acl>
+
+</config>
