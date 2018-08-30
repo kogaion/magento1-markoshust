@@ -34,4 +34,39 @@
         </resources>
 
     </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <training_animal after="Mage_Adminhtml">Training_Animal_Adminhtml</training_animal>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <training_animal>
+                    <file>training/animal.xml</file>
+                </training_animal>
+            </updates>
+        </layout>
+
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <training_animal>
+                        <type>model</type>
+                        <class>training/observer</class>
+                        <method>controllerActionPredispatch</method>
+                    </training_animal>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </adminhtml>
+
 </config>
