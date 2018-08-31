@@ -1,1 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+
+    <adminhtml_animal_list>
+        <reference name="content">
+            <block type="training_animal/adminhtml_animal" name="training.animal.list" />
+        </reference>
+    </adminhtml_animal_list>
+
+    <adminhtml_animal_grid> <!-- for ajax calls -->
+        <remove name="root" />
+        <block type="training_animal/adminhtml_animal_grid" name="training.animal.grid" output="toHtml" />
+    </adminhtml_animal_grid>
+
+    <adminhtml_animal_edit>
+        <reference name="content">
+            <block type="training_animal/adminhtml_animal_edit" name="training.animal.edit" />
+        </reference>
+        <reference name="left">
+            <block type="training_animal/adminhtml_animal_edit_tabs" name="training.animal.tabs" />
+        </reference>
+    </adminhtml_animal_edit>
+
+</layout>

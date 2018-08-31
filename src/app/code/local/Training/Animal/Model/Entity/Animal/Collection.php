@@ -6,6 +6,5 @@ class Training_Animal_Model_Entity_Animal_Collection extends Mage_Core_Model_Mys
     protected function _construct()
     {
         $this->_init("training/animal");
-        return parent::_construct();
     }
 }

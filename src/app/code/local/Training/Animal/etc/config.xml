@@ -72,7 +72,7 @@
             <controller_action_predispatch>
                 <observers>
                     <training_animal>
-                        <type>model</type>
+                        <type><!--model-->disabled</type>
                         <class>training/observer</class>
                         <method>controllerActionPredispatch</method>
                     </training_animal>
