@@ -33,6 +33,18 @@
             </training_animal_setup>
         </resources>
 
+        <helpers>
+            <training_animal>
+                <class>Training_Animal_Helper</class>
+            </training_animal>
+        </helpers>
+
+        <blocks>
+            <training_animal>
+                <class>Training_Animal_Block</class>
+            </training_animal>
+        </blocks>
+
     </global>
 
     <admin>

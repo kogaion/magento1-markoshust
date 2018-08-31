@@ -38,6 +38,19 @@
                         </children>
                     </catalog>
 
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <training_animal translate="title">
+                                        <title>Training Animals</title>
+                                        <sort_order>555</sort_order>
+                                    </training_animal>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+
                 </children>
             </admin>
         </resources>
