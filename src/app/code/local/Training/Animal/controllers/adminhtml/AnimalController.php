@@ -66,6 +66,7 @@ class Training_Animal_Adminhtml_AnimalController extends Mage_Adminhtml_Controll
                     $model->getName(),
                     $model->getType()
                 );
+
             } else {
                 $pageTitle = $this->__("New animal");
             }
@@ -79,6 +80,11 @@ class Training_Animal_Adminhtml_AnimalController extends Mage_Adminhtml_Controll
             $this->_addBreadcrumb($this->__("Catalog"), $this->__("Catalog"));
             $this->_addBreadcrumb($this->__("Animals"), $this->__("Animals"));
             $this->_addBreadcrumb($pageTitle, $pageTitle);
+
+            $data = Mage::getSingleton("adminhtml/session")->getFormData(true);
+            if (!empty($data)) {
+                $model->addData($data);
+            }
 
             $this->renderLayout();
 

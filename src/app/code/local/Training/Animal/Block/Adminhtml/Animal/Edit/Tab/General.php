@@ -1,8 +1,11 @@
 <?php
 
 
-class Training_Animal_Block_Adminhtml_Animal_Edit_Tab_General extends Mage_Adminhtml_Block_Widget_Form
+class Training_Animal_Block_Adminhtml_Animal_Edit_Tab_General
+    extends Mage_Adminhtml_Block_Widget_Form
+    implements Mage_Adminhtml_Block_Widget_Tab_Interface
 {
+
     protected function _prepareForm()
     {
         $form = new Varien_Data_Form();
@@ -43,9 +46,30 @@ class Training_Animal_Block_Adminhtml_Animal_Edit_Tab_General extends Mage_Admin
             "values" => Mage::getModel("training/entity_attribute_source_maybe")->getOptionArray(),
         ]);
 
-        $form->addValues($this->_getFormData());
+        $form->setValues($animal->getData());
         $this->setForm($form);
 
         return parent::_prepareForm();
     }
+
+    public function getTabLabel()
+    {
+        return $this->__("Content");
+    }
+
+    public function getTabTitle()
+    {
+        return $this->__("Content");
+    }
+
+    public function canShowTab()
+    {
+        return true;
+    }
+
+    public function isHidden()
+    {
+        return false;
+    }
+
 }

@@ -17,8 +17,19 @@
             <block type="training_animal/adminhtml_animal_edit" name="training.animal.edit" />
         </reference>
         <reference name="left">
-            <block type="training_animal/adminhtml_animal_edit_tabs" name="training.animal.tabs" />
+            <block type="training_animal/adminhtml_animal_edit_tabs" name="training.animal.tabs" >
+                <block type="training_animal/adminhtml_animal_edit_tab_general" name="training.animal.tab.general" />
+
+                <action method="addTab">
+                    <name>general</name>
+                    <block>training.animal.tab.general</block>
+                </action>
+            </block>
         </reference>
     </adminhtml_animal_edit>
+
+    <adminhtml_animal_new>
+        <update handle="adminhtml_animal_edit"/>
+    </adminhtml_animal_new>
 
 </layout>
